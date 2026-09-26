@@ -1,0 +1,46 @@
+# 描眉画目 · 定制美学 — robots.txt
+# 策略 cn-index：国内求收录优先，放行百度/搜狗/必应及各 AI 检索类爬虫
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: HaoSpider
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://miaomuhuamu.pages.dev/sitemap.xml
