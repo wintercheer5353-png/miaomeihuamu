@@ -43,4 +43,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://wintercheer5353-png.github.io/miaomeihuamu/sitemap.xml
+Sitemap: https://miaomeihuamu.com/sitemap.xml
