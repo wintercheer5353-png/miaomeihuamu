@@ -1,0 +1,47 @@
+[
+  {
+    "title": "女士野生眉 · 不同角度",
+    "category": "女士野生眉",
+    "image": "/assets/works/women-brow-detail.webp",
+    "video": "",
+    "alt": "女士野生眉不同角度作品记录",
+    "published": true,
+    "wide": true
+  },
+  {
+    "title": "女士野生眉 · 多组记录",
+    "category": "女士野生眉",
+    "image": "/assets/works/women-brow-cases.webp",
+    "video": "",
+    "alt": "女士野生眉多位模特作品记录",
+    "published": true,
+    "wide": true
+  },
+  {
+    "title": "男士野生眉 · 前后记录",
+    "category": "男士野生眉",
+    "image": "/assets/works/men-brow-before-after.webp",
+    "video": "",
+    "alt": "男士野生眉前后对比记录",
+    "published": true,
+    "wide": false
+  },
+  {
+    "title": "扩唇 / 唇形调整",
+    "category": "唇部",
+    "image": "/assets/works/lip-shape.webp",
+    "video": "",
+    "alt": "扩唇和唇形调整作品记录",
+    "published": true,
+    "wide": false
+  },
+  {
+    "title": "纹发际线 · 局部记录",
+    "category": "纹发际线",
+    "image": "/assets/works/hairline.webp",
+    "video": "",
+    "alt": "纹发际线局部作品记录",
+    "published": true,
+    "wide": false
+  }
+]

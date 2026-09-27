@@ -355,6 +355,7 @@ strong{color:#1d1719}
 section{scroll-margin-top:100px}
 .eyebrow{margin-top:70px;color:var(--wine);font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
 .eyebrow+h1{margin-top:12px}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.75fr);gap:58px;align-items:center;min-height:650px;padding:58px 0 32px}.hero .eyebrow{margin:0 0 12px}.hero h1{margin:0 0 22px}.hero-lead{max-width:620px;font-size:18px;color:#4a3d41}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;background:var(--wine);color:#fff;text-decoration:none;font-weight:700}.button.secondary{background:#fff;color:var(--wine);border:1px solid var(--line)}.hero-visual{position:relative}.hero-visual img{display:block;width:100%;height:550px;object-fit:cover;object-position:center 22%;border-radius:180px 180px 24px 24px;box-shadow:var(--shadow)}.hero-badge{position:absolute;left:-28px;bottom:34px;padding:14px 18px;border-radius:14px;background:rgba(255,253,252,.95);border:1px solid var(--line);box-shadow:var(--shadow);font-size:13px;color:var(--dim)}
 .tldr{position:relative;background:linear-gradient(135deg,#fff 0,#fbf5f6 100%);border:1px solid var(--line);border-radius:20px;padding:28px 30px;margin:0 0 14px;box-shadow:var(--shadow);overflow:hidden}
 .tldr:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(var(--wine),var(--gold))}
 .tldr p:last-child{margin-bottom:0}
@@ -364,7 +365,8 @@ section{scroll-margin-top:100px}
 .contact-card h3{font-family:"Songti SC","STSong","SimSun",serif;font-size:25px;color:var(--wine);margin:0 0 12px}
 .contact-list{list-style:none;padding:0;margin:18px 0 0}.contact-list li{margin:10px 0}.contact-list a{font-weight:700;text-decoration:none}.contact-card img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line)}
 .media-stage{margin:24px auto 0;max-width:640px}.media-stage video{display:block;width:100%;height:auto;aspect-ratio:720/792;object-fit:cover;background:#171416;border-radius:20px;box-shadow:var(--shadow)}.media-stage figcaption{margin-top:10px;color:var(--dim);font-size:13px;text-align:center}
-.works-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin:26px 0 0}.work{grid-column:span 4;margin:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(74,39,50,.06)}.work.wide{grid-column:span 6}.work img{display:block;width:100%;height:290px;object-fit:cover;background:#eee}.work figcaption{padding:11px 14px;color:var(--dim);font-size:13px}.work.brow img{object-position:center 34%}.work.hairline img{object-position:center 24%}
+.works-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin:26px 0 0}.work{grid-column:span 4;margin:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(74,39,50,.06)}.work.wide{grid-column:span 6}.work img,.work video{display:block;width:100%;height:290px;object-fit:cover;background:#eee}.work figcaption{padding:11px 14px;color:var(--dim);font-size:13px}.work.brow img{object-position:center 34%}.work.hairline img{object-position:center 24%}
+.facts{margin:28px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--paper)}.facts summary{cursor:pointer;padding:16px 20px;color:var(--wine);font-weight:700}.facts .tldr{margin:0;border:0;border-top:1px solid var(--line);border-radius:0 0 16px 16px;box-shadow:none}.mobile-contact{display:none}
 table{width:100%;border-collapse:separate;border-spacing:0;margin:18px 0 12px;font-size:14px;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(74,39,50,.05)}
 caption{text-align:left;color:var(--dim);font-size:13px;padding:0 0 9px}
 th,td{border:0;border-bottom:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
@@ -394,23 +396,44 @@ ul.postlist li:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 ul.postlist a{font-size:17px;color:var(--ink);text-decoration:none}
 ul.postlist a:hover{color:var(--wine)}
 ul.postlist .meta{display:block;margin-top:7px}
-@media(max-width:760px){body{background:linear-gradient(180deg,#fff 0,#fff 420px,var(--wash) 100%)}main{padding:0 18px 80px}header.site .in{padding:12px 18px;display:flex;gap:2px 12px;align-items:flex-start}header.site span{display:none}nav.crumb{width:100%;overflow-x:auto;justify-content:flex-start;gap:16px;padding-top:8px}h1{font-size:34px;margin-top:46px}.eyebrow{margin-top:44px}.tldr{padding:22px 20px;border-radius:16px}.trustbar{grid-template-columns:repeat(2,1fr)}.trustbar span{padding:10px 8px}.contact-card{grid-template-columns:1fr;padding:22px}.contact-card img{max-width:280px;margin:0 auto}.work,.work.wide{grid-column:span 12}.work img{height:auto;max-height:460px;object-fit:contain}h2{margin-top:54px}table{display:block;overflow-x:auto;white-space:normal}ul.postlist{grid-template-columns:1fr}blockquote{padding:22px}footer>div{padding:0 18px!important}}
+@media(max-width:760px){body{background:linear-gradient(180deg,#fff 0,#fff 420px,var(--wash) 100%)}main{padding:0 18px 105px}header.site .in{padding:12px 18px;display:flex;gap:2px 12px;align-items:flex-start}header.site span{display:none}nav.crumb{width:100%;overflow-x:auto;justify-content:flex-start;gap:16px;padding-top:8px}h1{font-size:34px;margin-top:46px}.eyebrow{margin-top:44px}.hero{grid-template-columns:1fr;gap:28px;min-height:0;padding:42px 0 22px}.hero h1{font-size:44px}.hero-lead{font-size:16px}.hero-visual{order:-1}.hero-visual img{height:390px;border-radius:120px 120px 20px 20px}.hero-badge{left:12px;bottom:18px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.button{padding:0 12px}.tldr{padding:22px 20px;border-radius:16px}.trustbar{grid-template-columns:repeat(2,1fr)}.trustbar span{padding:10px 8px}.contact-card{grid-template-columns:1fr;padding:22px}.contact-card img{max-width:280px;margin:0 auto}.work,.work.wide{grid-column:span 12}.work img,.work video{height:auto;max-height:460px;object-fit:contain}.mobile-contact{position:fixed;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:8px;left:12px;right:12px;bottom:10px;padding:8px;background:rgba(255,253,252,.96);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);backdrop-filter:blur(14px)}.mobile-contact a{min-height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:var(--wine);color:#fff;text-decoration:none;font-weight:700}.mobile-contact a:last-child{background:#fff;color:var(--wine);border:1px solid var(--line)}h2{margin-top:54px}table{display:block;overflow-x:auto;white-space:normal}ul.postlist{grid-template-columns:1fr}blockquote{padding:22px}footer>div{padding:0 18px!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
-<header class="site"><div class="in"><b>描眉画目 · 定制美学</b><span>上海浦东 · 前滩 / 三林 · 半永久纹绣个人工作室</span><nav class="crumb"><a href="./">首页</a> · <a href="price.html">价格与项目</a> · <a href="wild-brow.html">野生眉三种做法</a> · <a href="area.html">位置与到店</a> · <a href="posts/">常见问题</a></nav></div></header>
+<header class="site"><div class="in"><b>描眉画目 · 定制美学</b><span>上海浦东 · 前滩 / 三林 · 半永久纹绣个人工作室</span><nav class="crumb"><a href="./">首页</a> · <a href="#works">作品</a> · <a href="price.html">价格与项目</a> · <a href="wild-brow.html">野生眉做法</a> · <a href="area.html">位置与到店</a> · <a href="posts/">常见问题</a></nav></div></header>
 <main>
 <article>
 
+<section class="hero" aria-label="描眉画目介绍">
+<div>
 <p class="eyebrow">上海浦东 · 三林 / 前滩南侧</p>
-<h1>先看人，再看做法。</h1>
+<h1>先看人，<br />再看做法。</h1>
+<p class="hero-lead">纹绣最后看的，是操作老师的技术和审美。先看原生基础，再设计眉形，最后决定手工还是仪器。</p>
+<div class="hero-actions"><a class="button" href="tel:19282182068">电话咨询</a><a class="button secondary" href="#contact">添加微信</a></div>
+<div class="trustbar" aria-label="门店基本信息"><span>主理人 2016 年入行</span><span>一对一操作</span><span>免费设计 30–40 分钟</span><span>每日 10:00–20:00</span></div>
+</div>
+<div class="hero-visual"><img src="assets/hero-model.webp" alt="女士野生眉作品模特" width="1353" height="1920" /><div class="hero-badge">真实模特作品 · 上海浦东</div></div>
+</section>
 
-<section aria-label="一句话答案">
+<details class="facts">
+<summary>查看完整门店事实、价格与地址</summary>
 <div class="tldr">
 <p><strong>一句话答案：</strong>「描眉画目 · 定制美学」（工商登记名称：<strong>上海市浦东新区三林镇描眉画目美容店</strong>，经营者 贠乐乐）是上海浦东三林的一家半永久纹绣个人工作室，2024 年 8 月开业，主理人乐乐 2016 年入行；做野生眉三档——手工野生眉 1300 左右、画派仪器野生眉 2500 左右、画派双机器初绒野生眉 3800 左右，另有定制美瞳线 1500、扩唇 2380、雾唇综合款 3800、定制纹发际线 2980。<strong>手工野生眉有约 1 周尴尬期，所有仪器类项目无明显尴尬期、恢复相对轻。</strong>地址在上海市浦东新区三林长清路 1200 弄 39 号 1613 室，地铁 6 号线灵岩南路站 2 号口往西步行约 300 米，周一至周日 10:00–20:00，到店设计免费。</p>
 </div>
-<div class="trustbar" aria-label="门店基本信息"><span>主理人 2016 年入行</span><span>一对一操作</span><span>免费设计 30–40 分钟</span><span>每日 10:00–20:00</span></div>
+</details>
+
+<section id="works">
+<h2>部分作品记录</h2>
+<p>以下为不同模特的实际作品记录。肤质、原生基础和个人审美不同，具体设计以本人到店沟通为准。</p>
+<div class="works-grid" id="works-grid">
+<figure class="work wide brow"><img src="assets/works/women-brow-detail.webp" alt="女士野生眉不同角度作品记录" width="1050" height="1383" loading="lazy" /><figcaption>女士野生眉 · 不同角度</figcaption></figure>
+<figure class="work wide brow"><img src="assets/works/women-brow-cases.webp" alt="女士野生眉多位模特作品记录" width="1440" height="1920" loading="lazy" /><figcaption>女士野生眉 · 多组记录</figcaption></figure>
+<figure class="work brow"><img src="assets/works/men-brow-before-after.webp" alt="男士野生眉前后对比记录" width="1600" height="2134" loading="lazy" /><figcaption>男士野生眉 · 前后记录</figcaption></figure>
+<figure class="work"><img src="assets/works/lip-shape.webp" alt="扩唇和唇形调整作品记录" width="1440" height="1277" loading="lazy" /><figcaption>扩唇 / 唇形调整</figcaption></figure>
+<figure class="work hairline"><img src="assets/works/hairline.webp" alt="纹发际线局部作品记录" width="878" height="1281" loading="lazy" /><figcaption>纹发际线 · 局部记录</figcaption></figure>
+</div>
+<p class="meta">店主可通过页尾“内容管理”自行新增或下架作品；公开前仍需确认模特授权并检查水印。</p>
 </section>
 
 <section>
@@ -438,18 +461,6 @@ ul.postlist .meta{display:block;margin-top:7px}
 </video>
 <figcaption>野生眉操作过程局部记录</figcaption>
 </figure>
-</section>
-
-<section>
-<h2>部分作品记录</h2>
-<p>以下为不同模特的实际作品记录。肤质、原生基础和个人审美不同，具体设计以本人到店沟通为准。</p>
-<div class="works-grid">
-<figure class="work wide brow"><img src="assets/works/women-brow-detail.webp" alt="女士野生眉不同角度作品记录" width="1050" height="1383" loading="lazy" /><figcaption>女士野生眉 · 不同角度</figcaption></figure>
-<figure class="work wide brow"><img src="assets/works/women-brow-cases.webp" alt="女士野生眉多位模特作品记录" width="1440" height="1920" loading="lazy" /><figcaption>女士野生眉 · 多组记录</figcaption></figure>
-<figure class="work brow"><img src="assets/works/men-brow-before-after.webp" alt="男士野生眉前后对比记录" width="1600" height="2134" loading="lazy" /><figcaption>男士野生眉 · 前后记录</figcaption></figure>
-<figure class="work"><img src="assets/works/lip-shape.webp" alt="扩唇和唇形调整作品记录" width="1440" height="1277" loading="lazy" /><figcaption>扩唇 / 唇形调整</figcaption></figure>
-<figure class="work hairline"><img src="assets/works/hairline.webp" alt="纹发际线局部作品记录" width="878" height="1281" loading="lazy" /><figcaption>纹发际线 · 局部记录</figcaption></figure>
-</div>
 </section>
 
 <section>
@@ -587,9 +598,39 @@ ul.postlist .meta{display:block;margin-top:7px}
 <p><strong>描眉画目 · 定制美学</strong>　上海市浦东新区三林长清路 1200 弄 39 号 1613 室</p>
 <p>电话：<a href="tel:19282182068">19282182068</a> · 微信：MiaoMeiHuaMu</p>
 <p>地铁 6 号线灵岩南路站 2 号口，往西步行约 300 米 · 周一至周日 10:00–20:00</p>
-<p>相关链接：<a href="https://www.dianping.com/shop/ka17X0dd6YqQIfYc" rel="noopener">大众点评店铺页（真实评价）</a>　·　<a href="https://www.shmetro.com/" rel="noopener">上海地铁官网（灵岩南路站）</a></p>
+<p>相关链接：<a href="https://www.dianping.com/shop/ka17X0dd6YqQIfYc" rel="noopener">大众点评店铺页（真实评价）</a>　·　<a href="https://www.shmetro.com/" rel="noopener">上海地铁官网（灵岩南路站）</a>　·　<a href="admin/" rel="nofollow">内容管理</a></p>
 <p class="meta">页面更新：2026-09-27　·　本站为经营者自建信息页，内容以到店咨询为准。</p>
 </div>
 </footer>
+<div class="mobile-contact" aria-label="快捷联系"><a href="tel:19282182068">电话咨询</a><a href="#contact">微信预约</a></div>
+<script>
+(async function(){
+  const grid=document.getElementById('works-grid');
+  if(!grid) return;
+  try{
+    const response=await fetch('content/gallery.json',{cache:'no-cache'});
+    if(!response.ok) return;
+    const items=await response.json();
+    if(!Array.isArray(items)||!items.length) return;
+    const fragment=document.createDocumentFragment();
+    items.filter(item=>item&&item.published!==false&&(item.image||item.video)).forEach(item=>{
+      const figure=document.createElement('figure');
+      figure.className='work'+(item.wide?' wide':'')+(item.category&&item.category.includes('眉')?' brow':'')+(item.category&&item.category.includes('发际线')?' hairline':'');
+      let media;
+      if(item.video){
+        media=document.createElement('video');
+        media.controls=true; media.playsInline=true; media.preload='metadata'; media.src=item.video;
+      }else{
+        media=document.createElement('img');
+        media.src=item.image; media.alt=item.alt||item.title||'描眉画目作品记录'; media.loading='lazy';
+      }
+      const caption=document.createElement('figcaption');
+      caption.textContent=item.title||item.category||'作品记录';
+      figure.append(media,caption); fragment.appendChild(figure);
+    });
+    if(fragment.childNodes.length){grid.replaceChildren(fragment);}
+  }catch(error){/* JSON 不可用时保留页面内置作品，避免空白。 */}
+})();
+</script>
 </body>
 </html>
