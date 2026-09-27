@@ -1,0 +1,47 @@
+[
+  {
+    "title": "扩唇 / 唇形调整",
+    "image": "/assets/works/lip-shape.webp",
+    "video": "",
+    "alt": "扩唇和唇形调整作品记录",
+    "published": true,
+    "featured": true,
+    "wide": false
+  },
+  {
+    "title": "扩唇 · 作品 1",
+    "image": "/assets/uploads/images/imported/lip-extension/01.jpg",
+    "video": "",
+    "alt": "扩唇真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "扩唇 · 作品 2",
+    "image": "/assets/uploads/images/imported/lip-extension/02.jpg",
+    "video": "",
+    "alt": "扩唇真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "扩唇 · 作品 3",
+    "image": "/assets/uploads/images/imported/lip-extension/03.jpg",
+    "video": "",
+    "alt": "扩唇真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "扩唇 · 作品 4",
+    "image": "/assets/uploads/images/imported/lip-extension/04.jpg",
+    "video": "",
+    "alt": "扩唇真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  }
+]

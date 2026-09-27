@@ -11,41 +11,80 @@ media:
     categories: [video]
 
 content:
-  - name: gallery
-    label: 官网作品管理
+  - name: home
+    label: 首页封面设置
     type: file
-    path: content/gallery.json
+    path: content/home.json
+    format: json
+    fields:
+      - name: hero_image
+        label: 首页模特封面图
+        type: image
+        required: true
+        options: { media: work_images }
+      - { name: hero_alt, label: 图片说明（给搜索和无障碍使用）, type: string, required: true }
+      - { name: hero_badge, label: 图片左下角文字, type: string, required: true }
+
+  - name: women_brow
+    label: 女士野生眉作品
+    type: file
+    path: content/works/women-brow.json
     format: json
     list: true
-    fields:
-      - name: title
-        label: 展示标题
-        type: string
-        required: true
-      - name: category
-        label: 项目分类
-        type: select
-        options:
-          values: [女士野生眉, 男士野生眉, 美瞳线, 唇部, 纹发际线, 其他]
+    fields: &work_fields
+      - { name: title, label: 展示标题, type: string, required: true }
       - name: image
         label: 图片（图片作品填写）
         type: image
-        options:
-          media: work_images
+        options: { media: work_images }
       - name: video
         label: 视频（视频作品填写）
         type: file
-        options:
-          media: work_videos
-          extensions: [mp4, webm]
-      - name: alt
-        label: 图片说明（给搜索和无障碍使用）
-        type: string
-      - name: published
-        label: 在官网展示
-        type: boolean
-        default: true
-      - name: wide
-        label: 宽版展示
-        type: boolean
-        default: false
+        options: { media: work_videos, extensions: [mp4, webm] }
+      - { name: alt, label: 图片说明（给搜索和无障碍使用）, type: string }
+      - { name: published, label: 允许公开展示, type: boolean, default: true }
+      - { name: featured, label: 首页展示, type: boolean, default: false }
+      - { name: wide, label: 宽版展示, type: boolean, default: false }
+
+  - name: men_brow
+    label: 男士野生眉作品
+    type: file
+    path: content/works/men-brow.json
+    format: json
+    list: true
+    fields: *work_fields
+  - name: eyeliner
+    label: 美瞳线作品
+    type: file
+    path: content/works/eyeliner.json
+    format: json
+    list: true
+    fields: *work_fields
+  - name: lip_extension
+    label: 扩唇作品
+    type: file
+    path: content/works/lip-extension.json
+    format: json
+    list: true
+    fields: *work_fields
+  - name: dark_lip_correction
+    label: 改乌唇作品
+    type: file
+    path: content/works/dark-lip-correction.json
+    format: json
+    list: true
+    fields: *work_fields
+  - name: philtrum
+    label: 人中窝作品
+    type: file
+    path: content/works/philtrum.json
+    format: json
+    list: true
+    fields: *work_fields
+  - name: hairline
+    label: 纹发际线作品
+    type: file
+    path: content/works/hairline.json
+    format: json
+    list: true
+    fields: *work_fields

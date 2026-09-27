@@ -413,7 +413,7 @@ ul.postlist .meta{display:block;margin-top:7px}
 <div class="hero-actions"><a class="button" href="tel:19282182068">电话咨询</a><a class="button secondary" href="#contact">添加微信</a></div>
 <div class="trustbar" aria-label="门店基本信息"><span>主理人 2016 年入行</span><span>一对一操作</span><span>免费设计 30–40 分钟</span><span>每日 10:00–20:00</span></div>
 </div>
-<div class="hero-visual"><img src="assets/hero-model.webp" alt="女士野生眉作品模特" width="1353" height="1920" /><div class="hero-badge">真实模特作品 · 上海浦东</div></div>
+<div class="hero-visual"><img id="hero-image" src="assets/hero-model.webp" alt="女士野生眉作品模特" width="1353" height="1920" /><div class="hero-badge" id="hero-badge">真实模特作品 · 上海浦东</div></div>
 </section>
 
 <details class="facts">
@@ -605,13 +605,25 @@ ul.postlist .meta{display:block;margin-top:7px}
 <div class="mobile-contact" aria-label="快捷联系"><a href="tel:19282182068">电话咨询</a><a href="#contact">微信预约</a></div>
 <script>
 (async function(){
+  try{
+    const response=await fetch('content/home.json',{cache:'no-cache'});
+    if(!response.ok) return;
+    const settings=await response.json();
+    const image=document.getElementById('hero-image');
+    const badge=document.getElementById('hero-badge');
+    if(image&&settings.hero_image){image.src=settings.hero_image;}
+    if(image&&settings.hero_alt){image.alt=settings.hero_alt;}
+    if(badge&&settings.hero_badge){badge.textContent=settings.hero_badge;}
+  }catch(error){/* 配置不可用时保留内置封面。 */}
+})();
+(async function(){
   const grid=document.getElementById('works-grid');
   if(!grid) return;
   try{
-    const response=await fetch('content/gallery.json',{cache:'no-cache'});
-    if(!response.ok) return;
-    const items=await response.json();
-    if(!Array.isArray(items)||!items.length) return;
+    const sources=['women-brow','men-brow','eyeliner','lip-extension','dark-lip-correction','philtrum','hairline'];
+    const results=await Promise.allSettled(sources.map(name=>fetch('content/works/'+name+'.json',{cache:'no-cache'}).then(response=>response.ok?response.json():[])));
+    const items=results.flatMap(result=>result.status==='fulfilled'&&Array.isArray(result.value)?result.value:[]).filter(item=>item&&item.featured===true);
+    if(!items.length) return;
     const fragment=document.createDocumentFragment();
     items.filter(item=>item&&item.published!==false&&(item.image||item.video)).forEach(item=>{
       const figure=document.createElement('figure');

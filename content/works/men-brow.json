@@ -1,0 +1,65 @@
+[
+  {
+    "title": "男士野生眉 · 前后记录",
+    "image": "/assets/works/men-brow-before-after.webp",
+    "video": "",
+    "alt": "男士野生眉前后对比记录",
+    "published": true,
+    "featured": true,
+    "wide": false
+  },
+  {
+    "title": "男士野生眉 · 操作视频 1",
+    "image": "",
+    "video": "/assets/uploads/videos/imported/men-brow/01.mp4",
+    "alt": "男士野生眉操作过程记录",
+    "published": false,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "男士野生眉 · 作品 2",
+    "image": "/assets/uploads/images/imported/men-brow/02.jpg",
+    "video": "",
+    "alt": "男士野生眉真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "男士野生眉 · 作品 3",
+    "image": "/assets/uploads/images/imported/men-brow/03.jpg",
+    "video": "",
+    "alt": "男士野生眉真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "男士野生眉 · 作品 4",
+    "image": "/assets/uploads/images/imported/men-brow/04.jpg",
+    "video": "",
+    "alt": "男士野生眉真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "男士野生眉 · 作品 5",
+    "image": "/assets/uploads/images/imported/men-brow/05.jpg",
+    "video": "",
+    "alt": "男士野生眉真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  },
+  {
+    "title": "男士野生眉 · 作品 6",
+    "image": "/assets/uploads/images/imported/men-brow/06.jpg",
+    "video": "",
+    "alt": "男士野生眉真实模特作品记录",
+    "published": true,
+    "featured": false,
+    "wide": false
+  }
+]
