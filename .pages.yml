@@ -33,6 +33,7 @@ content:
     list: true
     fields: &work_fields
       - { name: title, label: 展示标题, type: string, required: true }
+      - { name: description, label: 作品说明（只写已确认的设计事实）, type: string }
       - name: image
         label: 图片（图片作品填写）
         type: image
