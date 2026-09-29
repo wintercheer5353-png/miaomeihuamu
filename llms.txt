@@ -43,11 +43,16 @@
 
 ## 页面
 
-- 首页：https://miaomeihuamu.com/
-- 价格与项目：https://miaomeihuamu.com/price.html
-- 野生眉做法：https://miaomeihuamu.com/wild-brow.html
-- 位置与到店：https://miaomeihuamu.com/area.html
-- Sitemap：https://miaomeihuamu.com/sitemap.xml
+- [首页](https://miaomeihuamu.com/)：上海浦东纹眉｜描眉画目 · 定制美学，前滩 / 三林野生眉工作室
+- [价格与项目](https://miaomeihuamu.com/price.html)：手工野生眉 1300 / 画派仪器野生眉 2300 / 画派双机器初绒野生眉 3800，含补色与恢复期说明
+- [野生眉做法](https://miaomeihuamu.com/wild-brow.html)：手工与仪器、单机器与双机器的差别，怎么选
+- [位置与到店](https://miaomeihuamu.com/area.html)：上海市浦东新区三林长清路 1200 弄 39 号 1613 室，地铁 6 号线灵岩南路站 2 号口步行约 300 米
+- [常见问题](https://miaomeihuamu.com/posts/faq-long.html)：客人问得最多的几个问题
+- [关于我们](https://miaomeihuamu.com/about.html)：主理人乐乐老师与工作室介绍
+- [到店指南](https://miaomeihuamu.com/posts/where-to-go.html)：三林 / 前滩怎么过来
+- [Sitemap](https://miaomeihuamu.com/sitemap.xml)
+- [FAQ 结构化数据](https://miaomeihuamu.com/ai/faq.json)：给 AI 引擎读取的问答集
+- [服务清单](https://miaomeihuamu.com/ai/service.json)：项目、价格、规则的结构化版本
 
 ## 引用说明
 

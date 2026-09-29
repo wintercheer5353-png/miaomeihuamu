@@ -1,0 +1,36 @@
+{
+  "name": "描眉画目 · 定制美学",
+  "alternateName": ["描眉画目", "描眉画目·定制美学·仪器野生眉·纹绣半永久纹眉纹唇（浦东前滩店）"],
+  "legalName": "上海市浦东新区三林镇描眉画目美容店",
+  "type": "个人纹绣工作室",
+  "url": "https://miaomeihuamu.com/",
+  "llms": "https://miaomeihuamu.com/llms.txt",
+  "description": "上海浦东的个人纹绣工作室，主打仪器野生眉私人定制，按五官量感、脸型和原生眉基础设计眉型。",
+  "founder": "乐乐老师",
+  "founded": "2024-08",
+  "address": {
+    "street": "三林镇长清路 1200 弄 39 号 1613 室",
+    "locality": "上海市浦东新区",
+    "landmark": "前滩南侧，地铁 6 号线灵岩南路站 2 号口往西约 300 米"
+  },
+  "telephone": "19282182068",
+  "openingHours": "Mo-Su 10:00-20:00（预约制）",
+  "areasServed": ["上海", "上海浦东", "前滩", "三林"],
+  "priceRange": "1300-3800 CNY",
+  "services": [
+    {"name": "手工野生眉", "price": 1300},
+    {"name": "画派仪器野生眉", "price": 2300},
+    {"name": "画派双机器初绒野生眉", "price": 3800},
+    {"name": "扩唇", "price": 2380},
+    {"name": "改乌唇", "price": 3800},
+    {"name": "美瞳线", "price": 1500},
+    {"name": "纹发际线", "price": 2980}
+  ],
+  "policies": {
+    "touchColor": "1 年内免费补色",
+    "waterContact": "仅仪器类野生眉当天可碰水；手工野生眉按恢复期护理",
+    "freeDesign": "所有渠道顾客可免费到店设计眉形，约 30-45 分钟",
+    "upsell": "不做升单"
+  },
+  "updated": "2026-09-29"
+}
