@@ -3,8 +3,8 @@
   "url": "https://miaomeihuamu.com/",
   "updated": "2026-09-29",
   "services": [
-    {"name": "手工野生眉", "price": 1300, "currency": "CNY", "recovery": "约 1 周，有尴尬期", "duration": "维持约 1 年"},
-    {"name": "画派仪器野生眉", "price": 2300, "currency": "CNY", "recovery": "约 3–4 天，无明显尴尬期", "duration": "维持约 2–3 年", "note": "单台机器按原生毛质选电流仪或半抛机"},
+    {"name": "手工野生眉", "price": 1300, "currency": "CNY", "recovery": "有尴尬期", "duration": "维持约 1 年"},
+    {"name": "画派仪器野生眉", "price": 2300, "currency": "CNY", "recovery": "没有尴尬期", "duration": "维持约 2–3 年", "note": "单台机器按原生毛质选电流仪或半抛机"},
     {"name": "画派双机器初绒野生眉", "price": 3800, "currency": "CNY", "recovery": "约 3–4 天", "duration": "维持约 2–3 年", "note": "电流仪铺绒毛线 + 半抛机走主线结构线"},
     {"name": "扩唇", "price": 2380, "currency": "CNY"},
     {"name": "改乌唇", "price": 3800, "currency": "CNY"},
